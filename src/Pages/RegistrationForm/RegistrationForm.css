@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #eaf7fc;
+    font-family: Arial, sans-serif;
+}
+
+.registration-container {
+    width: 650px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.registration-container h1 {
+    color: #078399;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.registration-container h2 {
+    color: #222;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Border around complete form */
+.registration-form {
+    border: 2px solid #078399;
+    border-radius: 12px;
+    padding: 30px 35px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Label + textbox in correct order */
+.form-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Submit button */
+.registration-form button {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #078399;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #056c7a;
+}
