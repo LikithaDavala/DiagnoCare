@@ -1,0 +1,184 @@
+:root {
+    --login-teal: #087f8c;
+    --login-dark: #12343b;
+    --login-muted: #6b7d80;
+    --login-border: #dbe5e5;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(320px, 0.95fr) minmax(420px, 1.05fr);
+    background: #f5fbfa;
+}
+
+.login-visual {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding: clamp(2rem, 6vw, 6rem);
+    color: #fff;
+    background-image: linear-gradient(180deg, rgba(7, 63, 70, 0.05), rgba(7, 42, 48, 0.9)),
+        url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.visual-content {
+    max-width: 28rem;
+}
+
+.visual-label {
+    margin: 0 0 1.5rem;
+    color: #a9e4df;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.visual-content h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.08;
+}
+
+.visual-content p:last-child {
+    max-width: 24rem;
+    margin: 1.25rem 0 0;
+    color: #d8eeee;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.login-form {
+    align-self: center;
+    width: min(100% - 4rem, 30rem);
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.login-form h1 {
+    margin: 0;
+    color: var(--login-dark);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.1;
+}
+
+.login-form h2 {
+    margin: 0.75rem 0 2.5rem;
+    color: var(--login-muted);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 1.35rem;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--login-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--login-border);
+    border-radius: 8px;
+    outline: none;
+    background: #fff;
+    color: var(--login-dark);
+    font: inherit;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: var(--login-teal);
+    box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.12);
+}
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+}
+
+.remember-option {
+    display: flex !important;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0 !important;
+    color: var(--login-muted) !important;
+    font-weight: 400 !important;
+}
+
+.remember-option input {
+    accent-color: var(--login-teal);
+}
+
+.forgot-password-link,
+.login-form p a {
+    color: var(--login-teal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-form button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.95rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: var(--login-teal);
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+.login-form button:hover {
+    background: #066b76;
+    transform: translateY(-1px);
+}
+
+.login-form > p {
+    margin: 1.5rem 0 0;
+    color: var(--login-muted);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+    .login-container {
+        display: block;
+    }
+
+    .login-visual {
+        min-height: 330px;
+        padding: 2rem;
+    }
+
+    .login-form {
+        width: min(100% - 2rem, 30rem);
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-options {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
