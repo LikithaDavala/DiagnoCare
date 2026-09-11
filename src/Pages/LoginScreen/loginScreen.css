@@ -1,25 +1,25 @@
 :root {
-    --login-teal: #087f8c;
-    --login-dark: #12343b;
-    --login-muted: #6b7d80;
-    --login-border: #dbe5e5;
+    --login-teal: #1769aa;
+    --login-dark: #12304a;
+    --login-muted: #668095;
+    --login-border: #d6e5f0;
 }
 
 .login-container {
-    min-height: 100vh;
+    min-height: calc(100vh - 72px);
     display: grid;
     grid-template-columns: minmax(320px, 0.95fr) minmax(420px, 1.05fr);
-    background: #f5fbfa;
+    background: #f4f9fc;
 }
 
 .login-visual {
     position: relative;
     display: flex;
     align-items: flex-end;
-    min-height: 100vh;
+    min-height: calc(100vh - 72px);
     padding: clamp(2rem, 6vw, 6rem);
     color: #fff;
-    background-image: linear-gradient(180deg, rgba(7, 63, 70, 0.05), rgba(7, 42, 48, 0.9)),
+    background-image: linear-gradient(180deg, rgba(15, 73, 118, 0.05), rgba(9, 43, 72, 0.9)),
         url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=85");
     background-position: center;
     background-size: cover;
@@ -31,7 +31,7 @@
 
 .visual-label {
     margin: 0 0 1.5rem;
-    color: #a9e4df;
+    color: #b7dcf3;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.16em;
@@ -46,7 +46,7 @@
 .visual-content p:last-child {
     max-width: 24rem;
     margin: 1.25rem 0 0;
-    color: #d8eeee;
+    color: #e0f0fa;
     font-size: 1.05rem;
     line-height: 1.6;
 }
@@ -102,7 +102,7 @@
 .form-group input[type="email"]:focus,
 .form-group input[type="password"]:focus {
     border-color: var(--login-teal);
-    box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.12);
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.14);
 }
 
 .form-options {
@@ -149,7 +149,7 @@
 }
 
 .login-form button:hover {
-    background: #066b76;
+    background: #125487;
     transform: translateY(-1px);
 }
 

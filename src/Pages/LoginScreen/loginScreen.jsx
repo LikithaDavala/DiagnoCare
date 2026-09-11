@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./loginPage.css";
+import "./loginScreen.css";
 
-function LoginPage() {
+function LoginScreen() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     return (
@@ -54,4 +54,4 @@ function LoginPage() {
         </div>
     );
 }
-export default LoginPage;
+export default LoginScreen;

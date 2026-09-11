@@ -5,7 +5,6 @@ function RegistrationForm() {
 
     return (
         <div className="registration-container">
-            <h1>Diagno Care</h1>
             <h2>Patient Registration Form:</h2>
 
             <div className="registration-form">

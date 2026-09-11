@@ -1,34 +1,29 @@
 body {
     margin: 0;
-    background-color: #eaf7fc;
-    font-family: Arial, sans-serif;
+    background-color: #f4f9fc;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .registration-container {
-    width: 650px;
-    margin: 30px auto;
+    width: min(650px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 54px 0 60px;
     text-align: center;
 }
 
-.registration-container h1 {
-    color: #078399;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
 .registration-container h2 {
-    color: #222;
+    color: #12304a;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 /* Border around complete form */
 .registration-form {
-    border: 2px solid #078399;
+    border: 1px solid #c8ddeb;
     border-radius: 12px;
     padding: 30px 35px;
     background-color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 28px rgba(28, 83, 120, 0.1);
 }
 
 /* Label + textbox in correct order */
@@ -43,7 +38,7 @@ body {
 .form-row label {
     text-align: center;
     font-weight: bold;
-    color: #222;
+    color: #294a62;
 }
 
 .form-row input,
@@ -52,7 +47,7 @@ body {
     height: 45px;
     padding: 0 12px;
     box-sizing: border-box;
-    border: 1px solid #bbb;
+    border: 1px solid #c4d8e6;
     border-radius: 8px;
     font-size: 16px;
 }
@@ -64,7 +59,7 @@ body {
     margin-top: 10px;
     border: none;
     border-radius: 8px;
-    background-color: #078399;
+    background-color: #1769aa;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -72,5 +67,26 @@ body {
 }
 
 .registration-form button:hover {
-    background-color: #056c7a;
+    background-color: #125487;
+}
+
+@media (max-width: 760px) {
+    .registration-container {
+        width: min(100% - 28px, 650px);
+        padding-top: 36px;
+    }
+
+    .registration-form {
+        padding: 24px 18px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        text-align: left;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
 }
