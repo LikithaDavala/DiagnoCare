@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLabContext } from "../../context/labContext";
-import RegistrationForm from "../RegistrationForm/RegistrationForm";
+import RegistrationForm from "../RegistrationForm/registrationForm";
 import "./patientRegistration.css";
 
 function PatientRegistration() {
