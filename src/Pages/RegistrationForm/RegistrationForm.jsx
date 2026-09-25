@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLabContext } from "../../context/labContext";
-import "./RegistrationForm.css";
+import "./registrationForm.css";
 
 function RegistrationForm({ onComplete }) {
   const navigate = useNavigate();
