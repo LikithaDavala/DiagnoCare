@@ -6,10 +6,8 @@ import "./registrationForm.css";
 function RegistrationForm({ onComplete }) {
   const navigate = useNavigate();
   const { patients, addPatient } = useLabContext();
-
   const nextPad = String(patients.length + 1).padStart(5, "0");
   const nextPid = `LAB-2026-${nextPad}`;
-
   const [fullName, setFullName] = useState("");
   const [dob, setDob] = useState("");
   const [age, setAge] = useState("");
