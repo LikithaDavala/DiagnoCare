@@ -1,5 +1,7 @@
 # DiagnoCare
 
+
+
 DiagnoCare is a React-based healthcare application. The current project includes a registration route and a responsive login page designed for users to sign in to their healthcare account.
 
 ## Technologies Used
